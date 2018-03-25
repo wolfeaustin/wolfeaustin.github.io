@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Sorting with Ruby"
 date:   2018-03-25 13:01:31 -0400
 categories: jekyll update
 ---
@@ -10,13 +10,31 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+When using one of the many enumerable methods that Ruby has to offer, it's easy to take them for granted. With not much thought, we can determine characteristics of an integer or perform some fairly complicated functions on arrays of material.
+
+What goes on behind the scenes?
+
+Some of these methods wouldn't be too difficult to duplicate.  Like the Array.uniq method for instance. 'Given an array, return a new array with only uniq instances'.
+
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+a = [1,2,3,2,3]
+def uniq(array)
+  temp = []
+  array.each do |item|
+    if !temp.include?(item)
+      temp << item
+    end
+  end
+  temp
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+#=> [1,2,3]
 {% endhighlight %}
+
+Easy enough.  Create a new array.  If the new array doesn't have this current object, then add it.
+
+What about more complex functions?
+
+Enter the .sort method. 
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
