@@ -14,7 +14,7 @@ When using one of the many enumerable methods that Ruby has to offer, it's easy 
 
 What goes on behind the scenes?
 
-Some of these methods wouldn't be too difficult to duplicate.  Like the Array.uniq method for instance. 'Given an array, return a new array with only uniq instances'.
+Some of these methods wouldn't be too difficult to duplicate.  Like the Array.uniq method for instance. 'Given an array, return a new array with only unique instances'.
 
 {% highlight ruby %}
 a = [1,2,3,2,3]
@@ -34,7 +34,7 @@ Easy enough.  Create a new array.  If the new array doesn't have this current ob
 
 What about more complex functions?
 
-Enter the .sort method. 
+Enter the .sort method. We may know that sorting in general is one of the most talked about topics in Computer Science.  
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
