@@ -4,11 +4,7 @@ title:  "Sorting with Ruby"
 date:   2018-03-25 13:01:31 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
 
 When using one of the many enumerable methods that Ruby has to offer, it's easy to take them for granted. With not much thought, we can determine characteristics of an integer or perform some fairly complicated functions on arrays of material.
 
@@ -32,11 +28,48 @@ end
 
 Easy enough.  Create a new array.  If the new array doesn't have this current object, then add it.
 
+However, it seems like we're cheating if we can use another enumerable method that we haven't yet defined. So let's define include?.
+
+Array.include? 'If the item we pass in is included in the array, then return true, otherwise return false'
+
+{% highlight ruby %}
+a = [1,2,3,2,3]
+def include?(array, itemToCheck)
+  t_or_f = false
+  array.each do |n|
+    if n == itemToCheck
+      t_or_f = true
+    end
+  end
+  t_or_f
+end
+a.include?(0)
+#=> false
+{% endhighlight %}
+
+How about some of the boolean evaluation methods?
+
+Array.min 'Return the smallest value'
+
+{% highlight ruby %}
+a = [2,3,2,3,1]
+
+def min(array)
+  array.sort[0]
+end
+a.sort
+#=> 1
+{% endhighlight %}
+
 What about more complex functions?
 
-Enter the .sort method. We may know that sorting in general is one of the most talked about topics in Computer Science.  
+We may know that sorting in general is one of the most discussed topics in Computer Science. The fact that we take this method for granted when there is so much going on 'under the hood' is absurd.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Ruby had quite a lot of options when it came to selecting a particular sorting algorithm to use to for this task. After some research, I've learned that Ruby has implemented an optimized version of the popular QuickSort algorithm.  QuickSort uses a 'divide-and-conquer' method to handle the sorting.  Which means it recursively splits the list up into increasingly smaller pieces, sorts those, and then puts the pieces back together.
+
+Here is a link with a more in depth explanation with visuals: http://interactivepython.org/runestone/static/pythonds/SortSearch/TheQuickSort.html
+
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
