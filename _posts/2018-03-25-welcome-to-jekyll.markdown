@@ -61,8 +61,6 @@ a.min
 
 Once again we're cheating.  However, tackling the .sort is much more involved than our previous methods.
 
-We may know that sorting in general is one of the most discussed topics in Computer Science. The fact that we take this method for granted when there is so much going on 'under the hood' is absurd.
-
 Ruby implements an optimized version of the QuickSort algorithm.  QuickSort uses a 'divide-and-conquer' strategy to handle the sorting.  Which means it recursively splits the list up into increasingly smaller pieces, sorts those, and then puts the pieces back together.
 
 The general overview would look something like this:
@@ -119,6 +117,11 @@ def partition(arr, first, last)
 end
 {% endhighlight %}
 
+
+
+Sorting in general is one of the most discussed topics in Computer Science and there are numerous available implementations.
+
+It's important to know what these methods are doing and through understanding, we gain appreciation for Ruby as a language.  
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
