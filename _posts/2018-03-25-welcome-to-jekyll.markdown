@@ -85,12 +85,13 @@ Here is a link with a more in depth explanation with visuals: http://interactive
 {% highlight ruby %}
 
 def quicksort(arr, first, last)
+  puts "#{arr} #{first} #{last}"
   if first < last
     p_index = partition(arr, first, last)
     quicksort(arr, first, p_index - 1)
     quicksort(arr, p_index + 1, last)
   end
-
+  puts "Done quickSort"
   arr
 end
 
