@@ -9,7 +9,7 @@ Whenever we think of applications that are 'Changing the World', we will probabl
 
 I'd like to make this a shout out post to all of lesser-known apps that truly change the lives of their users who would otherwise be helpless.
 
-![Be My Eyes]({"/assets/BeMyEyes.png"})
+![Be My Eyes]({/assets/BeMyEyes.png})
 
 {% highlight ruby %}
 a = [2,3,2,3,1]
