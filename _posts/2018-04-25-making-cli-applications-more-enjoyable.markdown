@@ -18,9 +18,9 @@ Something like this is easily created using an ASCII generator like the one foun
 Or if you want to generate an ascii version of your favorite photo, you could use something like this.
 http://picascii.com/
 
-pre-ASCII
+Before and after we take an image and convert it to usable ASCII characters.
+
 ![Welcome ASCII]({{ "/assets/kang.png" | absolute_url }})
-post-ASCII
 ![Welcome ASCII]({{ "/assets/ASCIId.png" | absolute_url }})
 
 If we want to add a bit more to the user experience, then we can animate these ASCII objects. These are generally created using a similar process to that of Claymation.  Each time the object appears to move, it's actually an entirely new picture that has been output to the terminal preceded by something clearing the old image (lots of "\n"'s).
