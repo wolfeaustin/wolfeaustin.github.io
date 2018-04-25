@@ -13,14 +13,18 @@ Instead of greeting the user with 'Welcome to Our CLI Project'.  We could attain
 
 ![Welcome ASCII]({{ "/assets/ASCII Welcome.png" | absolute_url }})
 
-Something like this is easily created using an ASCII generator like the one found here: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+Something like this is easily created using an ASCII generator like the one found here:
+ http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
 
 Or if you want to generate an ascii version of your favorite photo, you could use something like this.
+
 http://picascii.com/
 
-Before and after we take an image and convert it to usable ASCII characters.
+Before and after we take an image and convert it to usable ASCII characters:
 
 ![Welcome ASCII]({{ "/assets/kang.png" | absolute_url }})
+
+
 ![Welcome ASCII]({{ "/assets/ASCIId.png" | absolute_url }})
 
 If we want to add a bit more to the user experience, then we can animate these ASCII objects. These are generally created using a similar process to that of Claymation.  Each time the object appears to move, it's actually an entirely new picture that has been output to the terminal preceded by something clearing the old image (lots of "\n"'s).
@@ -34,8 +38,10 @@ To play this little easter egg, copy and paste this in a new terminal window.
 {% endhighlight %}
 
 
-There are a ton of other resources out there and here are some of the best ones to get you started:
-
+Here are some more ASCII animations for your enjoyment:
+https://www.asciimator.net/
+https://creators.vice.com/en_us/article/53w37d/its-bunnies-vs-robots-in-this-brilliant-ascii-animation
+http://glench.com/hash/#CLICK
 
 
 
