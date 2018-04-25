@@ -39,9 +39,13 @@ To play this little easter egg, copy and paste this in a new terminal window.
 
 
 Here are some more ASCII animations for your enjoyment:
+
 https://www.asciimator.net/
+
 https://creators.vice.com/en_us/article/53w37d/its-bunnies-vs-robots-in-this-brilliant-ascii-animation
+
 http://glench.com/hash/#CLICK
+
 
 
 
