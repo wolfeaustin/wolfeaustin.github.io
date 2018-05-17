@@ -26,9 +26,14 @@ create an image that would be shown while something is loading you would write s
 
 {% endhighlight %}
 
+
 Mojs.io is another library for Javascript animations that offers step-by-step tutorials.  Click on 'tutorials'
 and from there you should see a large variety of really impressive shapes and animations created with this tool and implemented with Javascript
+
+
 ![Wicked Instructions]({{ "/assets/mojs.png" | absolute_url }})
+
+
 http://mojs.io
 
 
