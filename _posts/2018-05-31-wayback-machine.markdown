@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Wayback Machine"
-date:   2018-04-04 13:07:31 -0400
+date:   2018-05-31 13:07:31 -0400
 categories: jekyll update
 ---
 
